@@ -1,0 +1,25 @@
+#Atur cara bagi mengira jumlah luas permukaan dan isi padu sebuah tangki air berbentuk silinder
+
+#pengisytihar pemboleh ubah dan pemalar
+#Input
+#Luas permukaan
+print("Sila masukkan Jejari")
+jejari = float(input("Masukkan jejari: "))
+print("Sila masukkan Tinggi")
+tinggi = float(input("Masukkan tinggi: "))
+
+import math
+#power variable
+x = pow(jejari, 2)
+
+#equation for cylinder surface area
+#2 x π x j² + 2 x π x j x t
+cylinder_surface_area = (2 * 3.142 * x) + (2 * 3.142 * jejari * tinggi)
+print("\ncylinder surface area:",cylinder_surface_area,"cm²")
+
+#equation for cylinder volume
+#π x j² x t
+cylinder_volume = 3.142 * x * tinggi
+print("cylinder volume:",cylinder_volume,"cm³")
+
+print("===============================================================Terima kasih==================================================================")
